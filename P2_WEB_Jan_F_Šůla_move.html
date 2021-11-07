@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style2.css" rel="stylesheet">
+
+    <title>Characters</title>
+</head>
+<body>
+    <nav>
+        <h1>Paradox Live</h1>
+        <a href="P2_WEB_Jan_F_Šůla_Parallax.html">Home</a>
+        <a href="P2_WEB_Jan_F_Šůla_move.html">Characters</a>
+        <a href="">Songs</a>
+    </nav>
+
+    <section>
+        <header>
+            <a href="#" class="logo">Paradox Live</a>
+            <div class="toggle"></div>
+        </header>
+        <img src="bg.png" class="bg">
+        <img src="Hajun.png" class="hajun">
+        <div class="content">
+            <h2>The member of BAE <br><span>Hajun Yeon</span></h2>
+            <p>
+                Born in one of the most prominent financial conglomerate family in Korea. Due to his demeanor and looks, he was nicknamed 'Smiling Young Noble', but he is actually quite sadistic in nature. Because he was born in a complicated environment swirling in conflicting interests and ulterior motives, he lived half of his life very fiercely and swore to take revenge on both of his parents in his heart.</p>
+            <a href="#">Read full biography</a>
+        </div>
+
+    </section>
+
+    <script type="text/javascript">
+        document.addEventListener("mousemove", function(e){
+            const bg = document.querySelector('.bg');
+            const hajun = document.querySelector('.hajun');
+            const content = document.querySelector('.content');
+
+            bg.style.width = 100 + e.pageX/150 + '%';
+            bg.style.height = 100 + e.pageX/100 + '%';
+            
+            hajun.style.right = 100 + e.pageX/2.5 + 'px';
+            content.style.left =  e.pageX/2.2 + 'px';
+        })
+    </script>
+
+
+</body>
+
+</html>
